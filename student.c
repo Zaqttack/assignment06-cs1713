@@ -4,25 +4,12 @@
 #include"student.h"
 
 // Write code such that the input is taken from a file
-int getStudentInformation(Student* s) {
-	FILE *infp, *stderr;
-	int N, i;
-	int* arr;
-	
-	infp = fopen("inputData.txt", "r");
-	if (fopen == NULL) {
-		fopen(stderr, "No File Found!\n");
-	}
-	
-	fscanf(infp, "%d", &N);
+void getStudentInformation(Student s[],FILE *infp, int N) {
+	int i;
 	
 	for ( i = 0; i < N; i++) {
-		fscanf(infp, "%s %d %lf", s[i].fName, s[i].age, s[i].gpa);
+		fscanf(infp, "%s %d %lf", s[i].fName, &s[i].age, &s[i].gpa);
 	}
-	
-	fclose(infp);
-	
-	return N;
 }
 
 double getAverageGPA(Student s[], int N) {
