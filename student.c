@@ -1,12 +1,12 @@
 #include <stdio.h>
 #include <string.h>
-#include <stdlib.>
+#include <stdlib.h>
 #include"student.h"
 
 // Write code such that the input is taken from a file
-int getStudentInformation(Student s[]) {
-	FILE *infp;
-	int N;
+int getStudentInformation(Student* s) {
+	FILE *infp, *stderr;
+	int N, i;
 	int* arr;
 	
 	infp = fopen("inputData.txt", "r");
