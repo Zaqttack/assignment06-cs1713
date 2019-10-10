@@ -9,7 +9,7 @@ typedef struct Student_struct {
 
 // Write code such that the input is taken from a file
 
-getStudentInformation();
+int getStudentInformation(Student[]);
 double getAverageGPA(Student[], int);
 Student getBestStudent(Student[], int);
 

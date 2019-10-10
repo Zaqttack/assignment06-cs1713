@@ -4,10 +4,15 @@
 
 int main(int argc, char *argv[]) {
     // Write code such that the input is taken from the file - “inputData.txt”
-
+	Student students;
+	double avg;
+	int N;
+	
+	N = getStudentInformation(students);
+	
     // Remainder of the program should be similar to the following – which gets average GPA and prints that + gets the best student and prints that
 
-    double avg = getAverageGPA(students, N);
+    avg = getAverageGPA(students, N);
 
     printf("Student average GPA is %lf\n", avg);
     Student bestStudent = getBestStudent(students,N);
