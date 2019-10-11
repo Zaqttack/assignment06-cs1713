@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <string.h>
 #include <stdlib.h>
-#include"student.h"
+#include "student.h"
 
 // Write code such that the input is taken from a file
 void getStudentInformation(Student s[],FILE *infp, int N) {

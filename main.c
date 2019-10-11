@@ -10,7 +10,7 @@ int main(int argc, char *argv[]) {
 	FILE *infp;
 	int N, i;
 	
-	infp = fopen("inputData.txt", "r");
+	infp = fopen(argv[1], "r");
 	if (fopen == NULL) {
 		printf("Cannot Open File!\n");
 		exit(0);
